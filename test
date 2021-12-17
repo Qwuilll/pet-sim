@@ -18,14 +18,14 @@ Header.Name = 'Header'
 Header.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 Header.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Header.BorderSizePixel = 0
-Header.Position = UDim2.new(0, -255, 0, 100)
+Header.Position = UDim2.new(0, -255, 0, 10)
 Header.Size = UDim2.new(0, 250, 0, 40)
 
 local Frame = Instance.new('Frame', Header)
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0, 0, 0, 130)
+Frame.Position = UDim2.new(0, 0, 0, 40)
 Frame.Size = UDim2.new(0, 250, 0, 5)
 Frame.Name = 'Header/Background'
 
