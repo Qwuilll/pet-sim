@@ -170,7 +170,7 @@ Speed.TextSize = 16
 
 local SpeedToggle = 0
 Speed.MouseButton1Click:connect(function()
-    SpeedToggle = (SpeedToggle + 1) 
+    SpeedToggle = (SpeedToggle + 1) % 5
     Speed.Text = "Auto Hatch Speed: " .. SpeedToggle + 1
 end)
 
