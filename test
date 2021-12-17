@@ -222,8 +222,10 @@ while wait() do
             break
         end
     end
-    if not eggIsValid then
+        if not eggIsValid then
         Egg.TextColor3 = Color3.fromRGB(200, 0, 0)
+    else
+        Egg.TextColor3 = Color3.fromRGB(0, 0, 0)
     end
     
     if HatchRegularToggle == true then
