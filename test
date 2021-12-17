@@ -204,18 +204,7 @@ end)
 
 CoreGui.PetSimulatorX.Header:TweenPosition(UDim2.new(0, 5, 0, 10), 'In', 'Back', 0.5)
 
-while wait() do -- wait() delays until the next frame
-    -- so it's better to use wait() than wait(0.2)
-    -- unless you want specific timing
-    -- ok so first do the check
-    if Egg.Text == '' then
-      Egg.TextSize = 20 -- the text size when its empty
-    else
-      Egg.TextSize = 16 -- the normal text size
-    end
-    -- You can change 20 and 16 to your own values
-    
-    -- then do your next part of code
+while wait() do 
     local Word = Egg.Text
     local Split = string.split(Word, ' ')
     for i, v in pairs(Split) do
