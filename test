@@ -155,6 +155,47 @@ HatchGolden.MouseButton1Click:connect(function()
 	end
 end)
 
+local Speed = Instance.new('TextButton', Background)
+Speed.Name = 'Speed'
+Speed.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+Speed.BackgroundTransparency = 0
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0, 0, 0, 85)
+Speed.Size = UDim2.new(0, 250, 0, 40)
+Speed.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Speed.Font = Enum.Font.Highway
+Speed.Text = 'Auto Hatch Speed: 1'
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextSize = 16
+
+local SpeedToggle = 0
+Speed.MouseButton1Click:connect(function()
+	if SpeedToggle == 0 then
+		SpeedToggle = 1
+		Speed.Text = 'Auto Hatch Speed: 2'
+	else
+		if SpeedToggle == 1 then
+			SpeedToggle = 2
+			Speed.Text = 'Auto Hatch Speed: 3'
+	else
+		if SpeedToggle == 2 then
+			SpeedToggle = 3
+			Speed.Text = 'Auto Hatch Speed: 4'
+	else
+		if SpeedToggle == 3 then
+			SpeedToggle = 4
+			Speed.Text = 'Auto Hatch Speed: 5'
+	else
+		if SpeedToggle == 5 then
+			SpeedToggle = 0
+			Speed.Text = 'Auto Hatch Speed: 1'
+		         end
+		   end
+           end
+    end
+end
+end)
+
 local Triple = Instance.new('TextButton', Background)
 Triple.Name = 'Triple'
 Triple.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
@@ -204,7 +245,7 @@ end)
 
 CoreGui.PetSimulatorX.Header:TweenPosition(UDim2.new(0, 5, 0, 10), 'In', 'Back', 0.5)
 
-while wait(1) do 
+while wait(SpeedToggle) do 
     local Word = Egg.Text
     local Split = string.split(Word, ' ')
     for i, v in pairs(Split) do
