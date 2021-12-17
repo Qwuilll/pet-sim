@@ -170,30 +170,8 @@ Speed.TextSize = 16
 
 local SpeedToggle = 0
 Speed.MouseButton1Click:connect(function()
-	if SpeedToggle == 0 then
-		SpeedToggle = 1
-		Speed.Text = 'Auto Hatch Speed: 2'
-	else
-		if SpeedToggle == 1 then
-			SpeedToggle = 2
-			Speed.Text = 'Auto Hatch Speed: 3'
-	else
-		if SpeedToggle == 2 then
-			SpeedToggle = 3
-			Speed.Text = 'Auto Hatch Speed: 4'
-	else
-		if SpeedToggle == 3 then
-			SpeedToggle = 4
-			Speed.Text = 'Auto Hatch Speed: 5'
-	else
-		if SpeedToggle == 5 then
-			SpeedToggle = 0
-			Speed.Text = 'Auto Hatch Speed: 1'
-		         end
-		   end
-           end
-    end
-end
+    SpeedToggle = (SpeedToggle + 1) 
+    Speed.Text = "Auto Hatch Speed: " .. SpeedToggle + 1
 end)
 
 local Triple = Instance.new('TextButton', Background)
