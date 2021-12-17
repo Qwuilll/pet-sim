@@ -12,6 +12,7 @@ end
 local PetSimulatorX = Instance.new('ScreenGui', game:GetService('CoreGui'))
 PetSimulatorX.Name = 'PetSimulatorX'
 PetSimulatorX.ResetOnSpawn = false
+PetSimulatorX.Position = UDim2.new(0, -200, 0, 10
 
 local Header = Instance.new('Frame', PetSimulatorX)
 Header.Name = 'Header'
