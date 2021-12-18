@@ -245,7 +245,7 @@ Close.MouseButton1Click:connect(function()
 	CoreGui.PetSimulatorX:Destroy()
 end)
 
-CoreGui.PetSimulatorX.Header:TweenPosition(UDim2.new(0, 5, 0, 10), 'In', 'Linear', 0.5)
+CoreGui.PetSimulatorX.Header:TweenPosition(UDim2.new(0, 5, 0, 10), 'In', 'Back', 0.5)
 
 while wait(SpeedToggle) do 
     local Word = Egg.Text
