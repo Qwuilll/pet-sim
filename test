@@ -172,7 +172,7 @@ HatchAll.MouseButton1Click:connect(function()
 		HatchAllToggle = true
 		HatchAll.Text = 'Hatch All Eggs: On'
 	else
-		if HatchAlToggle == true then
+		if HatchAllToggle == true then
 			HatchAllToggle = false
 			HatchAll.Text = 'Hatch All Eggs: Off'
 		end
