@@ -188,14 +188,14 @@ Speed.Position = UDim2.new(0, 125, 0, 65)
 Speed.Size = UDim2.new(0, 125, 0, 40)
 Speed.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Speed.Font = Enum.Font.Roboto
-Speed.Text = 'Auto Hatch Speed: 1'
+Speed.Text = 'Hatch Speed: 1'
 Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
 Speed.TextSize = 16
 
 local SpeedToggle = 0
 Speed.MouseButton1Click:connect(function()
     SpeedToggle = (SpeedToggle + 1) % 5
-    Speed.Text = "Auto Hatch Speed: " .. SpeedToggle + 1
+    Speed.Text = "Hatch Speed: " .. SpeedToggle + 1
 end)
 
 local Triple = Instance.new('TextButton', Background)
