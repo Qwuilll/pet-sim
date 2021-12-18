@@ -28,6 +28,7 @@ Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0, 0, 0, 40)
 Frame.Size = UDim2.new(0, 250, 0, 5)
 Frame.Name = 'Header/Background'
+CoreGui.PetSimulatorX.Header.Position = UDim2.new(0, 0, 0, 100)
 
 local Hide = Instance.new('TextButton', Header)
 Hide.Name = 'Hide'
@@ -245,7 +246,7 @@ Close.MouseButton1Click:connect(function()
 	CoreGui.PetSimulatorX:Destroy()
 end)
 
-CoreGui.PetSimulatorX.Header:TweenPosition(UDim2.new(0, 5, 0, 10), 'In', 'Back', 0.5)
+CoreGui.PetSimulatorX.Header:TweenPosition(UDim2.new(0, 5, 0, 10), 'In', 'Linear', 0.5)
 
 while wait(SpeedToggle) do 
     local Word = Egg.Text
