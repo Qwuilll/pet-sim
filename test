@@ -287,6 +287,9 @@ for _, eggName in ipairs(validNames) do
 	wait(SpeedToggle)
 	thing:InvokeServer({result2, TripleToggle})
     end
+    if HatchAllToggle == false then
+    break
+    end
 end
 end
 end
