@@ -283,7 +283,6 @@ for _, eggName in ipairs(validNames) do
     local result = "Golden ".. eggName.. " Egg"
     local result2 = eggName.. " Egg"
     if result ~= "" and result2 ~= "" then -- check if you even hatch an egg
-    wait(SpeedToggle)
         thing:InvokeServer({result, TripleToggle}) 
 	wait(SpeedToggle)
 	thing:InvokeServer({result2, TripleToggle})
