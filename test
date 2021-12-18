@@ -284,7 +284,7 @@ for _, eggName in ipairs(validNames) do
     local result2 = eggName.. " Egg"
     if result ~= "" and result2 ~= "" then -- check if you even hatch an egg
         thing:InvokeServer({result, TripleToggle}) 
-	wait()
+	wait(SpeedToggle)
 	thing:InvokeServer({result2, TripleToggle})
     end
 end
