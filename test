@@ -280,8 +280,8 @@ while wait(SpeedToggle) do
     if HatchAllToggle == true then
 for _, eggName in ipairs(validNames) do
     local thing = game:GetService('Workspace')["__THINGS"]["__REMOTES"]["buy egg"]
-    local result = "Golden".. eggName.. "Egg"
-    local result2 = eggName.. "Egg"
+    local result = "Golden ".. eggName.. " Egg"
+    local result2 = eggName.. " Egg"
     if result ~= "" and result2 ~= "" then -- check if you even hatch an egg
         thing:InvokeServer({result, TripleToggle}) 
 	wait()
