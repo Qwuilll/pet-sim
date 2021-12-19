@@ -270,6 +270,10 @@ while wait(SpeedToggle) do
     else
         Egg.TextColor3 = Color3.fromRGB(0, 0, 0)
     end
+   if Result == "Egg Of Many Gifts" then
+   Result = "Egg of Many Gifts"
+   game:GetService('Workspace')["__THINGS"]["__REMOTES"]["buy egg"]:InvokeServer({Result, TripleToggle})
+   
     
     if HatchRegularToggle == true then
         game:GetService('Workspace')["__THINGS"]["__REMOTES"]["buy egg"]:InvokeServer({Result.. ' Egg', TripleToggle})
