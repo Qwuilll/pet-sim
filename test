@@ -257,7 +257,7 @@ while wait(SpeedToggle) do
     end
     local Result = table.concat(Split, ' ')
     
-    local validNames = {'Cracked', 'Spotted', 'Wood', 'Grass', 'Beachball', 'Coconut', 'Rock', 'Geode', 'Snow', 'Ice', 'Icicle', 'Yeti', 'Cactus', 'Spiked', 'Obsidian', 'Magma', 'Dominus', 'Enchanted', 'Relic', 'Samurai', 'Rainbow', 'Haunted', 'Hell', 'Heaven', 'Empyrean', 'Metal', 'Tech', 'Titanium', 'Dark Tech', 'Steampunk', 'Mechanical', 'Lab', 'Chemical', 'Alien', 'Martian', 'Planet'}
+    local validNames = {'Jolly', 'Gingerbread', 'Christmas', 'Egg of Many Gifts',  'Cracked', 'Spotted', 'Wood', 'Grass', 'Beachball', 'Coconut', 'Rock', 'Geode', 'Snow', 'Ice', 'Icicle', 'Yeti', 'Cactus', 'Spiked', 'Obsidian', 'Magma', 'Dominus', 'Enchanted', 'Relic', 'Samurai', 'Rainbow', 'Haunted', 'Hell', 'Heaven', 'Empyrean', 'Metal', 'Tech', 'Titanium', 'Dark Tech', 'Steampunk', 'Mechanical', 'Lab', 'Chemical', 'Alien', 'Martian', 'Planet'}
     local eggIsValid = false
     for i, v in ipairs(validNames) do
         if Result == v then
