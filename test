@@ -28,6 +28,7 @@ Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0, 0, 0, 40)
 Frame.Size = UDim2.new(0, 250, 0, 5)
 Frame.Name = 'Header/Background'
+CoreGui.PetSimulatorX.Draggable = true
 
 local Hide = Instance.new('TextButton', Header)
 Hide.Name = 'Hide'
