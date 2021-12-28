@@ -197,6 +197,9 @@ local SpeedToggle = 0
 Speed.MouseButton1Click:connect(function()
     SpeedToggle = (SpeedToggle + 1) % 5
     Speed.Text = "Hatch Speed: " .. SpeedToggle + 1
+    if SpeedToggle == 4 then
+    SpeedToggle = 4.5
+    end
 end)
 
 local Triple = Instance.new('TextButton', Background)
