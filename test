@@ -258,7 +258,7 @@ while wait(SpeedToggle) do
     end
     local Result = table.concat(Split, ' ')
     
-    local validNames = {'Jolly', 'Gingerbread', 'Christmas', 'Egg of Many Gifts',  'Cracked', 'Spotted', 'Wood', 'Grass', 'Beachball', 'Coconut', 'Rock', 'Geode', 'Snow', 'Ice', 'Icicle', 'Yeti', 'Cactus', 'Spiked', 'Obsidian', 'Magma', 'Dominus', 'Enchanted', 'Relic', 'Samurai', 'Rainbow', 'Haunted', 'Hell', 'Heaven', 'Empyrean', 'Metal', 'Tech', 'Titanium', 'Dark Tech', 'Steampunk', 'Mechanical', 'Lab', 'Chemical', 'Alien', 'Martian', 'Planet'}
+    local validNames = {'Hacker', 'Cracked', 'Spotted', 'Wood', 'Grass', 'Beachball', 'Coconut', 'Rock', 'Geode', 'Snow', 'Ice', 'Icicle', 'Yeti', 'Cactus', 'Spiked', 'Obsidian', 'Magma', 'Dominus', 'Enchanted', 'Relic', 'Samurai', 'Rainbow', 'Haunted', 'Hell', 'Heaven', 'Empyrean', 'Metal', 'Tech', 'Titanium', 'Dark Tech', 'Steampunk', 'Mechanical', 'Lab', 'Chemical', 'Alien', 'Martian', 'Planet'}
     local eggIsValid = false
     for i, v in ipairs(validNames) do
         if Result == v then
@@ -271,11 +271,6 @@ while wait(SpeedToggle) do
     else
         Egg.TextColor3 = Color3.fromRGB(0, 0, 0)
     end
-    
-   if Result == "Egg Of Many Gifts" and HatchRegularToggle == true then
-   Result = "Egg of Many Gifts"
-   game:GetService('Workspace')["__THINGS"]["__REMOTES"]["buy egg"]:InvokeServer({Result, TripleToggle})
-   end
     
     if HatchRegularToggle == true then
         game:GetService('Workspace')["__THINGS"]["__REMOTES"]["buy egg"]:InvokeServer({Result.. ' Egg', TripleToggle})
