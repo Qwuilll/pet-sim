@@ -100,7 +100,7 @@ Egg.BorderSizePixel = 0
 Egg.Position = UDim2.new(0, 0, 0, 0)
 Egg.Size = UDim2.new(0, 250,0, 35)
 Egg.Font = Enum.Font.Ubuntu
-Egg.Text = 'Hacker'
+Egg.Text = 'Shiny Axolotl'
 Egg.PlaceholderText = 'Egg name goes here!'
 Egg.PlaceholderColor3 = Color3.fromRGB(100, 100, 100)
 Egg.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -258,7 +258,7 @@ while wait(SpeedToggle) do
     end
     local Result = table.concat(Split, ' ')
     
-    local validNames = {'Hacker', 'Glitch', 'Cracked', 'Spotted', 'Wood', 'Grass', 'Beachball', 'Coconut', 'Rock', 'Geode', 'Snow', 'Ice', 'Icicle', 'Yeti', 'Cactus', 'Spiked', 'Obsidian', 'Magma', 'Dominus', 'Enchanted', 'Relic', 'Samurai', 'Rainbow', 'Haunted', 'Hell', 'Heaven', 'Empyrean', 'Metal', 'Tech', 'Titanium', 'Dark Tech', 'Steampunk', 'Mechanical', 'Lab', 'Chemical', 'Alien', 'Martian', 'Planet'}
+    local validNames = {'Hacker', 'Axolotl', 'Shiny Axolotl', 'Glitch', 'Cracked', 'Spotted', 'Wood', 'Grass', 'Beachball', 'Coconut', 'Rock', 'Geode', 'Snow', 'Ice', 'Icicle', 'Yeti', 'Cactus', 'Spiked', 'Obsidian', 'Magma', 'Dominus', 'Enchanted', 'Relic', 'Samurai', 'Rainbow', 'Haunted', 'Hell', 'Heaven', 'Empyrean', 'Metal', 'Tech', 'Titanium', 'Dark Tech', 'Steampunk', 'Mechanical', 'Lab', 'Chemical', 'Alien', 'Martian', 'Planet'}
     local eggIsValid = false
     for i, v in ipairs(validNames) do
         if Result == v then
